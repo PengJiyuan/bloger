@@ -31,7 +31,7 @@
     1.矩形滑块,需在要初始化的input中添加class="rect-nicelabel"
     2.圆形滑块,需在要初始化的input中添加class="circle-nicelabel"
     3.文字图标按钮,需在要初始化的input中添加class="text-nicelabel"
-> 
+
 > 通过data-nicelabel='{}'来配置基本属性(JSON形式)
 可配置：
         1.position_class:'someClass'，该属性可配置按钮的位置的类（可不配置，默认值为nicelabel-default-position）
@@ -59,17 +59,22 @@
 ```
 
 > js初始化配置信息
-> 
-> \$('selector').nicelabel();
-> 
+
+> $('selector').nicelabel();
+ 
 > 如果是文本按钮,可配置
-> 
+ 
 > $('selector').nicelabel({
 > uselabel: true or false,//是否显示图标,默认true
+
 >	checked_ico: 'imgurl',//选定时显示的图标(不配置的话显示默认图标)
+
 >	unchecked_ico: 'imgurl',//未选定时显示的图标(不配置的话显示默认图标)
+
 >checked_text: 'Text',	//选定时默认显示的文本(默认值为Checked)
+
 >unchecked_text: 'Text',	//未选定时默认显示的文本(默认值为Unchecked)
+
 > });
 
 
@@ -101,9 +106,12 @@
 
 ----------
 ### 后记 ###
+
 >该版本为1.0，将不定期更新，更多样式，更多自定义配置，敬请期待~
-> 
+
 >转载请保留版权信息
+
 >作者:PJY
+
 >新浪微博:猫溜网
 
