@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+	<link href="./nicelabel/css/jquery-nicelabel.css" rel="stylesheet" type="text/css" />
+	<script src="./nicelabel/js/jquery.min.js"></script>
+	<style>
+		.clearfix{clear:both;}
+		.rect-checkbox{float:left;margin-left:20px;}
+		.rect-radio{float:left;margin-left:20px;}
+		.circle-checkbox{float:left;margin-left:20px;}
+		.circle-radio{float:left;margin-left:20px;}
+		.text_checkbox{float:left;margin-left:20px;}
+		.text_radio{float:left;margin-left:20px;}
+	</style>
+</head>
+<body>
+
+	<div id="rect-checkbox">
+		<h2 style="margin-left:20px;">矩形滑块checkbox</h2>
+		<br>
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-checkbox"}' checked type="checkbox" />
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-checkbox"}' type="checkbox" />
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-checkbox"}' disabled type="checkbox" />
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-checkbox"}' type="checkbox" />
+	</div>	
+	<div class="clearfix"></div>
+	<br>
+	<div id="rect-radio">
+		<h2 style="margin-left:20px;">矩形滑块radio</h2>
+		<br>
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-radio"}' checked name="rect-radio" type="radio" />
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-radio"}' name="rect-radio" type="radio" />
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-radio"}' name="rect-radio" type="radio" />
+		<input class="rect-nicelabel" data-nicelabel='{"position_class": "rect-radio"}' disabled name="rect-radio" type="radio" />
+	</div>
+	<div class="clearfix"></div>
+	<br>
+	<div id="circle-checkbox">
+		<h2 style="margin-left:20px;">圆形滑块checkbox</h2>
+		<br>
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-checkbox"}' disabled checked type="checkbox" />
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-checkbox"}'  type="checkbox" />
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-checkbox"}'  type="checkbox" />
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-checkbox"}'  type="checkbox" />
+	</div>	
+	<div class="clearfix"></div>
+	<br>
+	<div id="circle-radio">
+		<h2 style="margin-left:20px;">圆形滑块radio</h2>
+		<br>
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-radio"}' disabled checked name="circle-radio" type="radio" />
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-radio"}' name="circle-radio" type="radio" />
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-radio"}' name="circle-radio" type="radio" />
+		<input class="circle-nicelabel" data-nicelabel='{"position_class": "circle-radio"}' name="circle-radio" type="radio" />
+	</div>
+	<div class="clearfix"></div>
+	<br>
+	<div id="text-checkbox">
+		<h2 style="margin-left:20px;">文字按钮checkbox</h2>
+		<br>
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox", "checked_text": "已选定", "unchecked_text": "前端工程师"}' checked type="checkbox" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox", "checked_text": "已选定", "unchecked_text": "PHP工程师"}' type="checkbox" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox", "checked_text": "已选定", "unchecked_text": "IOS工程师"}' type="checkbox" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox"}' type="checkbox" />	
+	</div>		
+	<div class="clearfix"></div>
+	<br>
+	<div id="text-radio">
+		<h2 style="margin-left:20px;">文字按钮radio</h2>
+		<br>
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_radio", "checked_text": "已选定", "unchecked_text": "前端工程师"}' checked type="radio" name="text_radio" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_radio", "checked_text": "已选定", "unchecked_text": "PHP工程师"}' type="radio" name="text_radio"  />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_radio", "checked_text": "已选定", "unchecked_text": "IOS工程师"}' type="radio" name="text_radio"  />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_radio"}' type="radio" name="text_radio"  />	
+	</div>	
+	<div class="clearfix"></div>
+	<br>
+	<div id="text-checkbox-ico">
+		<h2 style="margin-left:20px;">自定义图标文字按钮</h2>
+		<br>
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox", "checked_text": "已选定", "unchecked_text": "前端工程师"}' checked type="checkbox" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox", "checked_text": "已选定", "unchecked_text": "PHP工程师"}' type="checkbox" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox", "checked_text": "已选定", "unchecked_text": "IOS工程师"}' type="checkbox" />	
+		<input class="text-nicelabel" data-nicelabel='{"position_class": "text_checkbox"}' type="checkbox" disabled />	
+	</div>
+
+</body>
+	<script src="./nicelabel/js/jquery.nicelabel.js"></script>
+	<script>
+	$(function(){
+		$('#rect-checkbox > input').nicelabel();
+		$('#rect-radio > input').nicelabel();
+		$('#circle-checkbox > input').nicelabel();
+		$('#circle-radio > input').nicelabel();
+		$('#text-checkbox > input').nicelabel();
+		$('#text-radio > input').nicelabel();
+		$('#text-checkbox-ico > input:eq(0)').nicelabel({
+			checked_ico: './checked.png',
+			unchecked_ico: './unchecked.png'
+		});
+		$('#text-checkbox-ico > input:eq(1)').nicelabel({
+			checked_ico: './checked.png',
+			unchecked_ico: './unchecked.png'
+		});
+		$('#text-checkbox-ico > input:eq(2)').nicelabel({
+			checked_ico: './checked.png',
+			unchecked_ico: './unchecked.png'
+		});
+		$('#text-checkbox-ico > input:eq(3)').nicelabel({
+			uselabel: false
+		});
+		
+	});
+	</script>
+</html>
