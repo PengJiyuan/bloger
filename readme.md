@@ -38,6 +38,7 @@
 > 通过data-nicelabel='{}'来配置基本属性(JSON形式)
 
 >可配置：
+
 >        1.position_class:'someClass'，该属性可配置按钮的位置的类（可不配置，默认值为nicelabel-default-position）
 
 >        2.checked_text:'someValue',该属性制定文字图标按钮被选定时显示的文本（可不配置，默认为Checked）
