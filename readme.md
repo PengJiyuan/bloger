@@ -29,11 +29,11 @@
 
 > 有三种类型的样式，分别为:
 
->1.矩形滑块,需在要初始化的input中添加class="rect-nicelabel"
+>		1.矩形滑块,需在要初始化的input中添加class="rect-nicelabel"
 
->2.圆形滑块,需在要初始化的input中添加class="circle-nicelabel"
+>		2.圆形滑块,需在要初始化的input中添加class="circle-nicelabel"
 
->3.文字图标按钮,需在要初始化的input中添加class="text-nicelabel"
+>		3.文字图标按钮,需在要初始化的input中添加class="text-nicelabel"
 
 > 通过data-nicelabel='{}'来配置基本属性(JSON形式)
 
