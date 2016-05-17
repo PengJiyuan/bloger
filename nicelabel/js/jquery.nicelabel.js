@@ -50,6 +50,7 @@
 				position_class = 'nicelabel-default-position';
 				
 			}	
+			
 			if( label_opts.checked_text ) {
 				
 				checked_text = label_opts.checked_text;
@@ -58,7 +59,8 @@
 				
 				checked_text = settings.checked_text;
 				
-			}			
+			}	
+			
 			if( label_opts.unchecked_text ) {
 				
 				unchecked_text = label_opts.unchecked_text;
@@ -93,6 +95,7 @@
 				}
 				obj.attr('id', input_id );
 			}
+			
 			if(obj.attr("class") == "circle-nicelabel") {
 				
 				obj.after( create( input_id, 'circle', position_class ) );
