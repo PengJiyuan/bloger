@@ -19,8 +19,8 @@
 [DEMO][2]
 
 
-  [1]: http://demo.cat666.com/nicelabel/demo.jpg
-  [2]: http://demo.cat666.com/nicelabel/nicelabel.html
+  [1]: ./image/demo.jpeg
+  [2]: https://pengjiyuan.github.io/jquery-nicelabel
 
 
 ----------
