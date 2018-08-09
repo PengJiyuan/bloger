@@ -1,0 +1,26 @@
+{
+  "name": "bloger",
+  "version": "0.0.0",
+  "description": "An Cli tool help you build blog simply.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengJiyuan/bloger.git"
+  },
+  "keywords": [
+    "blog",
+    "cli",
+    "simply",
+    "hexo",
+    "jekyll"
+  ],
+  "author": "PengJiyuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PengJiyuan/bloger/issues"
+  },
+  "homepage": "https://github.com/PengJiyuan/bloger#readme"
+}
