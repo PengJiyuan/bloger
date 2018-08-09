@@ -1,0 +1,42 @@
+@font-face {
+	font-family: "icons";
+	src: url('./icons.eot?0.434323203279221');
+	src: url('./icons.eot?0.434323203279221#iefix') format('eot'),
+		url('./icons.woff2?0.434323203279221') format('woff2'),
+		url('./icons.woff?0.434323203279221') format('woff'),
+		url('./icons.ttf?0.434323203279221') format('truetype'),
+		url('./icons.svg?0.434323203279221#icons') format('svg');
+}
+
+.icon:before {
+	font-family: "icons";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-down:before {
+	content: "\E001";
+}
+
+.icon-email:before {
+	content: "\E002";
+}
+
+.icon-github:before {
+	content: "\E003";
+}
+
+.icon-twitter:before {
+	content: "\E004";
+}
+
+.icon-zhihu:before {
+	content: "\E005";
+}

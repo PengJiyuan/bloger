@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="<% markdownCss %>" rel="stylesheet" />
+    <link href="<% highlightCss %>" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
+    <link href="/static/css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <div class="center">
+        <h1 class="title"><% title %></h1>
+        <p class="author"><img src="/static/images/common/favicon.ico" /><% author %> | <% type %></p>
+        <p class="intro"><% intro %></p>
+      </div>
+    </header>
+    <div class="markdown-body">
+      <div class="copyright">
+        本文由 <a href="/"><% author %></a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
+      </div>
+      <% content %>
+    </div>
+    <footer class="copyright">
+      <span><b><a href="/"><% name %></a></b> All rights reserved</span>
+    </footer>
+    <script>
+      var header = document.getElementById('header');
+      var themes = [
+        'mooonlit', 'cool_blue', 'evening_sunshing', 'memariani', 'kye_meh',
+        'by_design', 'red_sunset', 'pun_yeta', 'nepal', 'deep_space', 'curiosity_blue',
+        'purple_bliss', 'miaka', 'sky'
+      ];
+      function random(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+      }
+      const theme = themes[random(0, themes.length - 1)];
+      header.classList.add(theme);
+    </script>
+  </body>
+</html>
