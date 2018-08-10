@@ -1,4 +1,6 @@
-﻿# Bloger
+﻿![logo](./.github/logo.png)
+
+# Bloger
 
 一个帮助你在眨眼之间构建博客的工具。
 
