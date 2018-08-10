@@ -8,8 +8,8 @@
 
 ## Who use?
 
-* [isweety.me](isweety.me)
-* [litiantian1202.github.io](litiantian1202.github.io)
+* [isweety.me](http://isweety.me)
+* [litiantian1202.github.io](http://litiantian1202.github.io)
 
 ## 如何使用
 
