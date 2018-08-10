@@ -5,9 +5,14 @@ const program = require('commander');
 const fs = require('fs-extra');
 const path = require('path');
 const spawn = require('cross-spawn');
+const chalk = require('chalk');
+const dateTime = require('date-time');
 const gulpFile = require('../lib/gulpfile');
 const { version } = require('../package.json');
 const root = process.cwd();
+
+const isRoot = fs.existsSync(path.resolve(root, '_posts'));
+const notRootError = chalk.red('\nError: You should in the root path of blog project!\n');
 
 program
   .version(version)
@@ -41,14 +46,40 @@ if (program.init) {
     });
 }
 
-if (program.build) {
-  if (gulp.tasks.build) {
+if (program.build && gulp.tasks.build) {
+  if (isRoot) {
     gulp.start('build');
+  } else {
+    console.log(notRootError);
   }
 }
 
-if (program.dev) {
-  if (gulp.tasks.dev) {
+if (program.dev && gulp.tasks.dev) {
+  if (isRoot) {
     gulp.start('dev');
+  } else {
+    console.log(notRootError);
+  }
+}
+
+if (program.new && typeof program.new === 'string') {
+  if (isRoot) {
+    const postRoot = path.resolve(root, '_posts');
+    const date = new Date();
+    const thisYear = date.getFullYear().toString();
+    const template = `---\ntitle: ${program.new}\ndate: ${dateTime()}\nauthor: 作者\ntag: 标签\nintro: 简短的介绍这篇文章.\ntype: 原创\n---\n\nBlog Content`;
+    fs.ensureDirSync(path.resolve(postRoot, thisYear));
+    const allList = fs.readdirSync(path.resolve(postRoot, thisYear)).map(name => name.split('.md')[0]);
+    // name exist
+    if (~allList.indexOf(program.new)) {
+      console.log(chalk.red(`\nFile ${program.new}.md already exist!\n`));
+      process.exit(2);
+    }
+    fs.outputFile(path.resolve(postRoot, thisYear, `${program.new}.md`), template, 'utf8', (err) => {
+      if (err) throw err;
+      console.log(chalk.green(`\nCreate new blog ${chalk.cyan(`${program.new}.md`)} done!\n`));
+    });
+  } else {
+    console.log(notRootError);
   }
 }
