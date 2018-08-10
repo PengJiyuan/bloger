@@ -77,4 +77,7 @@ npm run dev
 
 这个命令会监听`_posts`中markdown文件的改动和`static`中less文件的改动，并且自动编译。
 
+## LICENSE
+
+[MIT](./LICENSE) © PengJiyuan
 
