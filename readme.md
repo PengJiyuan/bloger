@@ -1,4 +1,4 @@
-﻿![logo](./.github/logo.png)
+﻿<img width=100 src="./.github/logo.png" alt="logo" />
 
 # Bloger
 
