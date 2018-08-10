@@ -6,6 +6,11 @@
 
 ![Screenshot](./.github/screenshot.png)
 
+## Who use?
+
+* [isweety.me](isweety.me)
+* [litiantian1202.github.io](litiantian1202.github.io)
+
 ## 如何使用
 
 ```bash
