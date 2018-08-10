@@ -20,6 +20,7 @@ program
   .option('new [blog]', 'Create a new blog')
   .option('build', 'Build blog')
   .option('dev', 'Writing blog, watch mode.')
+  .option('iconfonts', 'Generate iconfonts.')
   .parse(process.argv);
 
 if (program.init) {
@@ -86,6 +87,14 @@ if (program.new && typeof program.new === 'string') {
       if (err) throw err;
       console.log(chalk.green(`\nCreate new blog ${chalk.cyan(`${program.new}.md`)} done!\n`));
     });
+  } else {
+    console.log(notRootError);
+  }
+}
+
+if (program.iconfonts && gulp.tasks.fonts) {
+  if (isRoot) {
+    gulp.start('fonts');
   } else {
     console.log(notRootError);
   }
