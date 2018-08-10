@@ -2,6 +2,8 @@
 
 一个帮助你在眨眼之间构建博客的工具。
 
+![Screenshot](./.github/screenshot.png)
+
 ## 如何使用
 
 ```bash
