@@ -30,9 +30,7 @@ if (program.init) {
       process.chdir(projectPath);
       const commond = 'npm';
       const args = [
-        'install',
-        'serve',
-        '--save-dev'
+        'install'
       ];
 
       spawn(commond, args, { stdio: 'inherit' }).on('close', code => {

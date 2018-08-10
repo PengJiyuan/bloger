@@ -1,14 +1,13 @@
 {
-  "name": "myblog",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "PengJiyuan's github blog.",
+  "description": "My blog.",
   "main": "index.js",
   "scripts": {
     "start": "serve .",
-    "build": "gulp",
-    "dev": "gulp dev",
-    "add": "git add .",
-    "iconfonts": "gulp fonts"
+    "build": "bloger build",
+    "dev": "bloger dev",
+    "add": "git add ."
   },
   "repository": {
     "type": "git",
@@ -29,17 +28,11 @@
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-csso": "^3.0.1",
-    "gulp-iconfont": "^10.0.1",
-    "gulp-iconfont-css": "^2.3.0",
-    "gulp-less": "^4.0.1",
-    "gulp-plumber": "^1.2.0",
     "pre-commit": "^1.2.2",
     "serve": "^9.4.0"
   },
   "pre-commit": [
-    "build"
+    "build",
+    "add"
   ]
 }
