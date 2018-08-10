@@ -81,6 +81,17 @@ npm run dev
 
 这个命令会监听`_posts`中markdown文件的改动和`static`中less文件的改动，并且自动编译。
 
+## Gh-pages
+
+Github的gh-pages可以为我们免费托管静态网站，如何将Bloger生成的博客发布到gh-pages托管呢？
+
+1. 执行`bloger init xxx` 之后会生成一个项目文件夹
+2. 进入这个文件夹之后执行 `git init`，新建一个git仓库
+3. 如果你的github仓库有你的同名仓库（比如你的用户名是jay, 那么你的同名仓库就是 `jay.github.io`），使用`git remote add origin git@github.com:jay/jay.github.io.git`将远程地址添加到本地。
+4. 将博客推送到github. `git commit -am 'init' && git push`
+
+通过以上的步骤，你的博客就已经被托管到gh-pages了，访问`jay.github.io`即可看到。
+
 ## LICENSE
 
 [MIT](./LICENSE) © PengJiyuan
