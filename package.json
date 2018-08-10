@@ -2,7 +2,7 @@
   "name": "bloger",
   "version": "0.0.0",
   "description": "An Cli tool help you build blog simply.",
-  "main": "index.js",
+  "bin": "bin/cli.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,18 @@
   "bugs": {
     "url": "https://github.com/PengJiyuan/bloger/issues"
   },
-  "homepage": "https://github.com/PengJiyuan/bloger#readme"
+  "homepage": "https://github.com/PengJiyuan/bloger#readme",
+  "dependencies": {
+    "commander": "^2.17.1",
+    "cross-spawn": "^6.0.5",
+    "fs-extra": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-iconfont": "^10.0.1",
+    "gulp-iconfont-css": "^2.3.0",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.0",
+    "mdpack": "^0.4.8"
+  }
 }
