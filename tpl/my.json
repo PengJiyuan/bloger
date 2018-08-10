@@ -1,11 +1,11 @@
 {
-  "name": "PengJiyuan",
-  "homepage": "http://isweety.me",
-  "intro": "随便写点东西",
+  "name": "Username",
+  "homepage": "localhost:5000",
+  "intro": "这里是简介",
   "links": {
-    "github": "https://github.com/PengJiyuan",
-    "zhihu": "https://www.zhihu.com/people/fu-xin-87-62",
-    "twitter": "https://twitter.com/MrjLEO",
-    "email": "pjy@isweety.me"
+    "github": "/",
+    "zhihu": "/",
+    "twitter": "/",
+    "email": "/"
   }
 }
