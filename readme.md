@@ -11,16 +11,16 @@ npm i bloger -g
 ## Cli
 
 ```
-  Usage: bloger [options]
+Usage: bloger [options]
 
-  Options:
+Options:
 
-    -V, --version    output the version number
-    init [blogName]  init blog project
-    new [blog]       Create a new blog
-    build            Build blog
-    dev              Writing blog, watch mode.
-    -h, --help       output usage information
+  -V, --version    output the version number
+  init [blogName]  init blog project
+  new [blog]       Create a new blog
+  build            Build blog
+  dev              Writing blog, watch mode.
+  -h, --help       output usage information
 ```
 
 #### 初始化博客项目
@@ -80,4 +80,3 @@ npm run dev
 ## LICENSE
 
 [MIT](./LICENSE) © PengJiyuan
-
