@@ -92,6 +92,10 @@ Github的gh-pages可以为我们免费托管静态网站，如何将Bloger生成
 
 通过以上的步骤，你的博客就已经被托管到gh-pages了，访问`jay.github.io`即可看到。
 
+## FAQ
+
+[Issues](https://github.com/PengJiyuan/bloger/issues) and [Pull Request](https://github.com/PengJiyuan/bloger/pulls) Welcome!
+
 ## LICENSE
 
 [MIT](./LICENSE) © PengJiyuan
