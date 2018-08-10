@@ -42,6 +42,13 @@ if (program.init) {
         if (code !== 0) {
           process.exit(1);
         }
+        spawn('npm', ['run', 'build'], { stdio: 'inherit' }).on('close', code => {
+          if (code !== 0) {
+            process.exit(1);
+          }
+          console.log(chalk.cyan('\nProject created!\n'));
+          console.log(`${chalk.cyan('You can')} ${chalk.grey(`cd ${projectName} && npm start`)} ${chalk.cyan('to serve blog website.')}\n`);
+        });
       });
     });
 }
