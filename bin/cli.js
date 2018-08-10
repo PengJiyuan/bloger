@@ -46,3 +46,9 @@ if (program.build) {
     gulp.start('build');
   }
 }
+
+if (program.dev) {
+  if (gulp.tasks.dev) {
+    gulp.start('dev');
+  }
+}
