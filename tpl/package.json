@@ -9,19 +9,10 @@
     "dev": "bloger dev",
     "add": "git add ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PengJiyuan/pengjiyuan.github.io.git"
-  },
   "keywords": [
     "Blog"
   ],
-  "author": "PengJiyuan",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/PengJiyuan/pengjiyuan.github.io/issues"
-  },
-  "homepage": "https://github.com/PengJiyuan/pengjiyuan.github.io#readme",
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "serve": "^9.4.0"
