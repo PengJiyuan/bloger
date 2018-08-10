@@ -22,11 +22,6 @@
     "url": "https://github.com/PengJiyuan/pengjiyuan.github.io/issues"
   },
   "homepage": "https://github.com/PengJiyuan/pengjiyuan.github.io#readme",
-  "dependencies": {
-    "@egoist/front-matter": "^1.0.0",
-    "mdpack": "^0.4.8",
-    "normalize.css": "^8.0.0"
-  },
   "devDependencies": {
     "pre-commit": "^1.2.2",
     "serve": "^9.4.0"
