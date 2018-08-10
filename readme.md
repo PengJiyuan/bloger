@@ -29,6 +29,7 @@ Options:
   new [blog]       Create a new blog
   build            Build blog
   dev              Writing blog, watch mode.
+  iconfonts        Generate iconfonts.
   -h, --help       output usage information
 ```
 
@@ -85,6 +86,23 @@ npm run dev
 ```
 
 这个命令会监听`_posts`中markdown文件的改动和`static`中less文件的改动，并且自动编译。
+
+#### 编译iconfonts
+
+```bash
+# 注意：使用这个命令需要在博客项目的根目录
+bloger iconfonts
+```
+
+这个命令会把`static/iconfonts/svgs`中的svg图片打包为iconfonts到`static/iconfonts/icons`下。
+
+使用的时候只需要引用`/static/iconfonts/icons/icons.css`即可。
+
+用法：
+
+```html
+<i class="icon icon-name"></i>
+```
 
 ## Gh-pages
 
