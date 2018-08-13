@@ -7,5 +7,13 @@
     "zhihu": "/",
     "twitter": "/",
     "email": "/"
-  }
+  },
+  "menus": [{
+    "name": "博客",
+    "link": "/"
+  }],
+  "followMe": [{
+    "name": "Github",
+    "link": "https://github.com"
+  }]
 }

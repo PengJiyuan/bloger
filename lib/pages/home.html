@@ -10,24 +10,34 @@
     <link href="/static/css/home.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="banner">
-      <div class="bg-cover"></div>
-      <div class="center">
-        <div class="links">
-          <% links %>
+    <% htmlMenu %>
+    <div class="site-wrapper">
+      <header class="banner">
+        <!-- <div class="bg-cover"></div> -->
+        <div class="center">
+          <div class="links">
+            <% links %>
+          </div>
+          <h1 class="title"><% name %>'s Blog</h1>
+          <p class="intro"> <% intro %> </p>
         </div>
-        <h1 class="title"><% name %>'s Blog</h1>
-        <p class="intro"> <% intro %> </p>
+        <div class="scroll-down">
+          <i class="icon icon-down"></i>
+        </div>
+      </header>
+      <div class="list">
+        <% blogList %>
       </div>
-      <div class="scroll-down">
-        <i class="icon icon-down"></i>
-      </div>
-    </header>
-    <div class="list">
-      <% blogList %>
+      <footer class="copyright">
+        <span><b><a href="/"><% name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
     </div>
-    <footer class="copyright">
-      <span><b><a href="/"><% name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
-    </footer>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('.banner', {
+        color: 'rgba(255, 255, 255, 0.2)',
+        count: 80
+      });
+    </script>
   </body>
 </html>

@@ -7,7 +7,7 @@ const path = require('path');
 const spawn = require('cross-spawn');
 const chalk = require('chalk');
 const dateTime = require('date-time');
-const gulpFile = require('../lib/gulpfile');
+require('../lib/gulpfile');
 const { version } = require('../package.json');
 const root = process.cwd();
 

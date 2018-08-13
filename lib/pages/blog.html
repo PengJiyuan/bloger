@@ -6,24 +6,28 @@
     <link href="<% highlightCss %>" rel="stylesheet" />
     <link rel="shortcut icon" href="/static/images/common/favicon.ico" type="image/x-icon" />
     <link href="/static/css/blog.css" rel="stylesheet" />
+    <link href="/static/iconfonts/icons/icons.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="header" class="header">
-      <div class="center">
-        <h1 class="title"><% title %></h1>
-        <p class="author"><img src="/static/images/common/favicon.ico" /><% author %> | <% type %></p>
-        <p class="intro"><% intro %></p>
+    <% htmlMenu %>
+    <div class="site-wrapper">
+      <header id="header" class="header">
+        <div class="center">
+          <h1 class="title"><% title %></h1>
+          <p class="author"><img src="/static/images/common/favicon.ico" /><% author %> | <% type %></p>
+          <p class="intro"><% intro %></p>
+        </div>
+      </header>
+      <div class="markdown-body">
+        <div class="copyright">
+          本文由 <a href="/"><% author %></a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
+        </div>
+        <% content %>
       </div>
-    </header>
-    <div class="markdown-body">
-      <div class="copyright">
-        本文由 <a href="/"><% author %></a> 创作，采用 <a href="https://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0</a> 国际许可协议进行许可, 可自由转载、引用，但需署名作者且注明文章出处
-      </div>
-      <% content %>
+      <footer class="copyright">
+        <span><b><a href="/"><% name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
+      </footer>
     </div>
-    <footer class="copyright">
-      <span><b><a href="/"><% name %></a></b> All rights reserved. Powerd by <a style="color: #f59200" href="https://github.com/PengJiyuan/bloger" target="_blank">Bloger</a>.</span>
-    </footer>
     <script>
       var header = document.getElementById('header');
       var themes = [
@@ -36,6 +40,13 @@
       }
       const theme = themes[random(0, themes.length - 1)];
       header.classList.add(theme);
+    </script>
+    <script src="https://unpkg.com/particle-bg/lib/particle-bg.umd.min.js"></script>
+    <script>
+      particleBg('#header', {
+        count: 30,
+        color: 'rgb(255, 255, 255, 0.2)'
+      });
     </script>
   </body>
 </html>

@@ -1,4 +1,5 @@
 @import './mixin/normalize.less';
+@import './components/menu.less';
 @fontColor: rgba(255, 255, 255, 0.9);
 
 html, body {
@@ -13,154 +14,165 @@ html, body {
   }
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #222 url(/static/images/common/banner.jpg) no-repeat fixed center;
-
-  @media only screen and (max-width: 900px) {
-    height: 60vh;
-  }
-  @media only screen and (max-width: 500px) {
-    height: 40vh;
-  }
-  .bg-cover {
-    position: absolute;
+.nav();
+.site-wrapper {
+  transition: transform .3s;
+  .banner {
+    position: relative;
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .center {
-    position: absolute;
-    margin-top: -40px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: @fontColor;
-    @media only screen and (max-width: 800px) {
-      margin-top: 0;
-    }
-    .links {
-      text-align: center;
-      > a {
-        margin-right: 10px;
-        > i {
-          color: @fontColor;
-          font-size: 40px;
-          transition: color .3s;
-          &:hover {
-            color: #fff;
-          }
-        }
-      }
-    }
-    .title {
-      font-size: 52px;
-      margin: 12px 0;
-      white-space: nowrap;
-    }
-    .intro {
-      text-align: center;
-      font-size: 18px;
-      font-weight: 200;
+    height: 100vh;
+    // background: #222 url(/static/images/common/banner.jpg) no-repeat fixed center;
+    background-image: linear-gradient(to bottom, #243949 0%, #517fa4 100%);
+  
+    @media only screen and (max-width: 900px) {
+      height: 60vh;
     }
     @media only screen and (max-width: 500px) {
+      height: 40vh;
+    }
+    .bg-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .center {
+      position: absolute;
+      margin-top: -40px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: @fontColor;
+      @media only screen and (max-width: 800px) {
+        margin-top: 0;
+      }
       .links {
+        text-align: center;
         > a {
+          margin-right: 10px;
           > i {
-            font-size: 30px;
+            color: @fontColor;
+            font-size: 40px;
+            transition: color .3s;
+            &:hover {
+              color: #fff;
+            }
           }
         }
       }
       .title {
-        font-size: 30px;
+        font-size: 52px;
+        margin: 12px 0;
+        white-space: nowrap;
       }
       .intro {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 200;
+      }
+      @media only screen and (max-width: 500px) {
+        .links {
+          > a {
+            > i {
+              font-size: 30px;
+            }
+          }
+        }
+        .title {
+          font-size: 30px;
+        }
+        .intro {
+          font-size: 14px;
+        }
+      }
+    }
+    .scroll-down {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      bottom: 15px;
+      left: 50%;
+      margin-left: -16px;
+      width: 34px;
+      height: 34px;
+      font-size: 44px;
+      text-align: center;
+      text-decoration: none;
+      color: @fontColor;
+      -webkit-animation: bounce 4s 2s infinite;
+      animation: bounce 4s 2s infinite;
+      > i {
+        color: @fontColor;
+        font-size: 38px;
+        &:before {
+          font-weight: bold;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        & > i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .list {
+    padding: 40px 0;
+    width: 80%;
+    max-width: 710px;
+    margin: 0 auto;
+    article {
+      position: relative;
+      box-sizing: border-box;
+      color: #2e2e2e;
+      padding-bottom: 20px;
+      border-bottom: #ebf2f6 1px solid;
+      &:after {
+        display: block;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border: #e7eef2 1px solid;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        margin-left: -5px;
+        background: #fff;
+        border-radius: 100%;
+        box-shadow: #fff 0 0 0 5px;
+      }
+      .intro {
+        color: #3a4145;
         font-size: 14px;
       }
+      .author {
+        color: #595959;
+        font-size: 15px;
+        img {
+          width: 24px;
+          height: 24px;
+          border-radius: 1000px;
+          vertical-align: -6px;
+          margin-right: 6px;
+        }
+      }
     }
   }
-  .scroll-down {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    bottom: 15px;
-    left: 50%;
-    margin-left: -16px;
-    width: 34px;
-    height: 34px;
-    font-size: 44px;
+  .copyright {
+    padding-bottom: 10px;
+    margin-top: 80px;
+    color: #3a4145;
     text-align: center;
-    text-decoration: none;
-    color: @fontColor;
-    -webkit-animation: bounce 4s 2s infinite;
-    animation: bounce 4s 2s infinite;
-    > i {
-      color: @fontColor;
-      font-size: 38px;
-      &:before {
-        font-weight: bold;
-      }
-    }
+    font-size: 13px;
     @media only screen and (max-width: 800px) {
-      & > i {
-        font-size: 24px;
-      }
+      font-size: 12px;
     }
   }
 }
-.list {
-  padding: 40px 0;
-  width: 80%;
-  max-width: 710px;
-  margin: 0 auto;
-  article {
-    position: relative;
-    box-sizing: border-box;
-    color: #2e2e2e;
-    padding-bottom: 20px;
-    border-bottom: #ebf2f6 1px solid;
-    &:after {
-      display: block;
-      content: "";
-      width: 7px;
-      height: 7px;
-      border: #e7eef2 1px solid;
-      position: absolute;
-      bottom: -5px;
-      left: 50%;
-      margin-left: -5px;
-      background: #fff;
-      border-radius: 100%;
-      box-shadow: #fff 0 0 0 5px;
-    }
-    .intro {
-      color: #3a4145;
-      font-size: 14px;
-    }
-    .author {
-      color: #595959;
-      font-size: 15px;
-      img {
-        width: 24px;
-        height: 24px;
-        border-radius: 1000px;
-        vertical-align: -6px;
-        margin-right: 6px;
-      }
-    }
-  }
-}
-.copyright {
-  padding-bottom: 10px;
-  margin-top: 80px;
-  color: #3a4145;
-  text-align: center;
-  font-size: 13px;
-  @media only screen and (max-width: 800px) {
-    font-size: 12px;
+
+.nav-open {
+  .site-wrapper {
+    transform: translate(-241px, 0);
   }
 }
 

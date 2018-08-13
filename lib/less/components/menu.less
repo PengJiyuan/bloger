@@ -1,0 +1,111 @@
+.nav() {
+  .nav {
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 40px;
+    transition: transform .3s;
+    .avatar {
+      border-radius: 300px;
+      opacity: 0.5;
+      transition: opacity 0.3s;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+      img {
+        width: 32px;
+        height: 32px;
+        border-radius: 100px;
+      }
+    }
+    .menu-btn {
+      height: 32px;
+      line-height: 32px;
+      font-size: 12px;
+      font-weight: 400;
+      padding: 0 12px;
+      border: 1px solid rgba(255, 255, 255, .6);
+      border-radius: 2px;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      transition: all .3s;
+      > i {
+        margin-right: 6px;
+        font-size: 14px;
+        vertical-align: -2px;
+      }
+      &:hover {
+        background-color: #fff;
+        color: #111;
+      }
+    }
+  }
+  .nav-open {
+    .nav {
+      transform: translate(-241px, 0);
+      .menu-btn {
+        transform: translate3d(78px, 0, 0);
+        background-color: #111;
+        color: #fff;
+        border-color: #111;
+      }
+    }
+  }
+  .nav-content {
+    z-index: 10;
+    position: fixed;
+    left: 100vw;
+    top: 0;
+    bottom: 0;
+    width: 241px;
+    background-color: #111;
+    transition: transform .3s;
+    padding: 20px;
+    color: #b8b8b8;
+    box-sizing: border-box;
+    > h3 {
+      margin-top: 26px;
+      font-weight: 300;
+    }
+    > i {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      color: #fff;
+    }
+    .menus,
+    .follow-me {
+      > a {
+        display: block;
+        color: #b8b8b8;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 300;
+        transition: color .3s;
+        &:hover {
+          color: #fff;
+        }
+        &.select {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+    .menus {
+      margin-bottom: 20px;
+    }
+  }
+  .nav-open {
+    .nav-content {
+      transform: translate(-241px, 0);
+    }
+  }
+}
