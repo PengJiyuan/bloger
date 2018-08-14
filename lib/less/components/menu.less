@@ -57,6 +57,33 @@
       }
     }
   }
+  @media (max-width: 780px) {
+    .nav {
+      padding: 20px;
+      .avatar {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .menu-btn {
+        height: 24px;
+        line-height: 24px;
+        padding: 0 8px;
+        > i {
+          margin-right: 6px;
+          font-size: 12px;
+        }
+      }
+    }
+    .nav-open {
+      .nav {
+        .menu-btn {
+          transform: translate3d(56px, 0, 0);
+        }
+      }
+    }
+  }
   .nav-content {
     z-index: 10;
     position: fixed;
