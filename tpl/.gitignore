@@ -63,3 +63,5 @@ typings/
 _test
 
 package-lock.json
+
+postMap.json
