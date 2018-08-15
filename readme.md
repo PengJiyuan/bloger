@@ -104,6 +104,82 @@ bloger iconfonts
 <i class="icon icon-name"></i>
 ```
 
+## 配置博客
+
+在生成的博客根目录有一个`my.json`文件，在这个文件中配置网站的一些基本属性。
+
+```json
+{
+  // XXX' Blog
+  "name": "XXX",
+  "homepage": "localhost:5000",
+  "intro": "这里是简介",
+  // 首页图标和跳转地址
+  "links": {
+    "github": "/",
+    "zhihu": "/",
+    "twitter": "/",
+    "email": "/"
+  },
+  // 菜单列表
+  "menus": [{
+    "name": "博客",
+    "link": "/"
+  }],
+  // 关注我列表
+  "followMe": [{
+    "name": "Github",
+    "link": "https://github.com"
+  }],
+  "disqus": false
+}
+```
+
+## 开启[disqus](https://disqus.com/)评论
+
+在`my.json`中，修改`disqus`字段，填上你申请到得disqus的src文件地址，比如:
+
+```json
+{
+  "disqus": {
+    "src": "https://xxx.disqus.com/embed.js"
+  }
+}
+```
+
+`disqus`字段为`false`表示不开启disqus评论系统。
+
+## 增加自定义页面
+
+Bloger支持添加自定义页面，比如你想添加一个关于我的页面，同时给这个页面一个独立的路由，那么你只需要在项目下新建一个模版文件。
+
+比如你新建一个`templates/about-me.ejs`文件，同时在`build.json`中配置所要生成的页面，配置如下：
+
+```json
+{
+  "pages": [{
+    "name": "关于我",
+    "path": "about-me",
+    "template": "templates/opensource.ejs",
+    "entry": "about-me.md"
+  }]
+}
+```
+
+以上配置表示以`templates/opensource.ejs`为模版，生成一个页面，路由为`/about-me`.
+
+如果指定`entry`，需要在`about-me`文件加中新建一个`about-me.md`文件，会自动将`about-me.md`编译高亮，并且插入到模版指定位置。
+
+`about-me.ejs`模版可包含如下字段（会在编译时自动替换）。
+
+* `<%- htmlMenu %>` - 通用的菜单
+* `<%- pureHtml %>` - markdown编译后的html
+* `<%= name %>` - `my.json`中配置的Username
+
+这个页面的样式怎么写？
+
+在`/static`文件下创建一个`less`文件夹，在less文件夹下创建一个less文件，`bloger build`或者`bloger dev`的时候会把这个less文件编译成css(经过autoprefixer和minify处理)到`/static/css`目录下。
+
 ## Gh-pages
 
 Github的gh-pages可以为我们免费托管静态网站，如何将Bloger生成的博客发布到gh-pages托管呢？

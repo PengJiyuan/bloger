@@ -15,5 +15,6 @@
   "followMe": [{
     "name": "Github",
     "link": "https://github.com"
-  }]
+  }],
+  "disqus": false
 }
