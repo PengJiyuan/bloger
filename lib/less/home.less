@@ -125,7 +125,6 @@ html, body {
       position: relative;
       box-sizing: border-box;
       color: #2e2e2e;
-      padding-bottom: 20px;
       border-bottom: #ebf2f6 1px solid;
       &:after {
         display: block;
@@ -147,13 +146,30 @@ html, body {
       }
       .author {
         color: #595959;
-        font-size: 15px;
+        font-size: 12px;
         img {
-          width: 24px;
-          height: 24px;
-          border-radius: 1000px;
-          vertical-align: -6px;
+          width: 20px;
+          height: 20px;
+          border-radius: 100px;
+          vertical-align: -4px;
           margin-right: 6px;
+        }
+      }
+      .tag {
+        color: #517fa4;
+        font-size: 13px;
+        height: 40px;
+        line-height: 50px;
+        > a {
+          color: #517fa4;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        > i {
+          font-size: 14px;
+          vertical-align: -2px;
+          margin-right: 4px;
         }
       }
     }
