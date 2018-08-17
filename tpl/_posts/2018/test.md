@@ -1,7 +1,7 @@
 ---
 title: 测试博客
 date: 2018/08/07
-author: PengJiyuan
+author: Author
 tag: Javascript
 intro: 这是一个测试的博客
 ---
