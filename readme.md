@@ -115,12 +115,19 @@ bloger iconfonts
   "homepage": "localhost:5000",
   "intro": "这里是简介",
   // 首页图标和跳转地址
-  "links": {
-    "github": "/",
-    "zhihu": "/",
-    "twitter": "/",
-    "email": "/"
-  },
+  "links": [{
+    "name": "github",
+    "link": "/"
+  }, {
+    "name": "zhihu",
+    "link": "/"
+  }, {
+    "name": "twitter",
+    "link": "/"
+  }, {
+    "name": "email",
+    "link": "/"
+  }],
   // 菜单列表
   "menus": [{
     "name": "博客",
