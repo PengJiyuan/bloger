@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "icons";
-	src: url('./icons.eot?0.434323203279221');
-	src: url('./icons.eot?0.434323203279221#iefix') format('eot'),
-		url('./icons.woff2?0.434323203279221') format('woff2'),
-		url('./icons.woff?0.434323203279221') format('woff'),
-		url('./icons.ttf?0.434323203279221') format('truetype'),
-		url('./icons.svg?0.434323203279221#icons') format('svg');
+	src: url('./icons.eot?0.7110547295911538');
+	src: url('./icons.eot?0.7110547295911538#iefix') format('eot'),
+		url('./icons.woff2?0.7110547295911538') format('woff2'),
+		url('./icons.woff?0.7110547295911538') format('woff'),
+		url('./icons.ttf?0.7110547295911538') format('truetype'),
+		url('./icons.svg?0.7110547295911538#icons') format('svg');
 }
 
 .icon:before {
@@ -21,22 +21,42 @@
 }
 
 
-.icon-down:before {
+.icon-book:before {
 	content: "\E001";
 }
 
-.icon-email:before {
+.icon-category:before {
 	content: "\E002";
 }
 
-.icon-github:before {
+.icon-close:before {
 	content: "\E003";
 }
 
-.icon-twitter:before {
+.icon-down:before {
 	content: "\E004";
 }
 
-.icon-zhihu:before {
+.icon-email:before {
 	content: "\E005";
+}
+
+.icon-github:before {
+	content: "\E006";
+}
+
+.icon-list:before {
+	content: "\E007";
+}
+
+.icon-tag:before {
+	content: "\E008";
+}
+
+.icon-twitter:before {
+	content: "\E009";
+}
+
+.icon-zhihu:before {
+	content: "\E00A";
 }
