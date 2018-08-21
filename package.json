@@ -1,6 +1,6 @@
 {
   "name": "bloger",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "An Cli tool help you build blog simply.",
   "bin": "bin/cli.js",
   "scripts": {
