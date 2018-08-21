@@ -142,6 +142,20 @@ bloger iconfonts
 }
 ```
 
+## 博客markdown文件中的配置
+
+在每个博客的markdown文件的头部，都需要包含一个定义该篇博客详细信息的一个metadata(使用`bloger new <blogName>`生成的博客会自动生成一个模版)，格式如下：
+
+```markdown
+title: 博客的标题
+date: 2018-08-14
+author: 作者名字
+tag: 标签，分类
+intro: 简述一下这篇博客
+type: 原创 | 转载 | 翻译
+top: true (是否置顶)
+```
+
 ## 开启[disqus](https://disqus.com/)评论
 
 在`my.json`中，修改`disqus`字段，填上你申请到得disqus的src文件地址，比如:
