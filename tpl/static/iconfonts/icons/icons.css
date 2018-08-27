@@ -1,11 +1,11 @@
 @font-face {
 	font-family: "icons";
-	src: url('./icons.eot?0.7110547295911538');
-	src: url('./icons.eot?0.7110547295911538#iefix') format('eot'),
-		url('./icons.woff2?0.7110547295911538') format('woff2'),
-		url('./icons.woff?0.7110547295911538') format('woff'),
-		url('./icons.ttf?0.7110547295911538') format('truetype'),
-		url('./icons.svg?0.7110547295911538#icons') format('svg');
+	src: url('./icons.eot?0.09361121912700465');
+	src: url('./icons.eot?0.09361121912700465#iefix') format('eot'),
+		url('./icons.woff2?0.09361121912700465') format('woff2'),
+		url('./icons.woff?0.09361121912700465') format('woff'),
+		url('./icons.ttf?0.09361121912700465') format('truetype'),
+		url('./icons.svg?0.09361121912700465#icons') format('svg');
 }
 
 .icon:before {
@@ -45,18 +45,22 @@
 	content: "\E006";
 }
 
-.icon-list:before {
+.icon-link:before {
 	content: "\E007";
 }
 
-.icon-tag:before {
+.icon-list:before {
 	content: "\E008";
 }
 
-.icon-twitter:before {
+.icon-tag:before {
 	content: "\E009";
 }
 
-.icon-zhihu:before {
+.icon-twitter:before {
 	content: "\E00A";
+}
+
+.icon-zhihu:before {
+	content: "\E00B";
 }
